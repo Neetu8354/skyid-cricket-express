@@ -4,15 +4,13 @@ import andar from "@/assets/sport-andarbahar.jpg";
 import teen from "@/assets/sport-teenpatti.jpg";
 import aviator from "@/assets/sport-aviator.jpg";
 import slots from "@/assets/sport-slots.jpg";
-import { WhatsAppButton } from "./WhatsAppButton";
+import { Link } from "react-router-dom";
 
-type Game = { img: string; title: string; subtitle: string; tag?: string };
+type Game = { img: string; title: string; subtitle: string; tag?: string; href: string };
 
 const Card = ({ g }: { g: Game }) => (
-  <a
-    href="https://wa.link/reddyanna_"
-    target="_blank"
-    rel="noopener noreferrer"
+  <Link
+    to={g.href}
     className="group relative rounded-2xl overflow-hidden border border-border bg-gradient-card shadow-lg hover:shadow-gold hover:border-primary/60 transition-all duration-300 hover:-translate-y-1"
   >
     <div className="aspect-square overflow-hidden">
@@ -27,10 +25,10 @@ const Card = ({ g }: { g: Game }) => (
       <h3 className="font-bold text-base md:text-lg">{g.title}</h3>
       <p className="text-xs text-muted-foreground">{g.subtitle}</p>
     </div>
-  </a>
+  </Link>
 );
 
-const Section = ({ id, eyebrow, title, items }: { id: string; eyebrow: string; title: string; items: Game[] }) => (
+const Section = ({ id, eyebrow, title, ctaHref, items }: { id: string; eyebrow: string; title: string; ctaHref: string; items: Game[] }) => (
   <section id={id} className="py-12 md:py-16">
     <div className="container">
       <div className="flex items-end justify-between mb-8">
@@ -40,9 +38,9 @@ const Section = ({ id, eyebrow, title, items }: { id: string; eyebrow: string; t
             <span className="text-gradient-gold">{title}</span>
           </h2>
         </div>
-        <WhatsAppButton variant="outline" className="hidden sm:inline-flex border-primary/60 text-primary hover:bg-primary/10">
+        <Link to={ctaHref} className="hidden sm:inline-flex items-center border border-primary/60 text-primary hover:bg-primary/10 px-4 py-2 rounded-md text-sm font-semibold transition-colors">
           Play Now
-        </WhatsAppButton>
+        </Link>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
@@ -59,11 +57,12 @@ export const GameSections = () => {
         id="cricket"
         eyebrow="Most Popular"
         title="Cricket Betting"
+        ctaHref="/cricket"
         items={[
-          { img: cricket, title: "IPL 2026", subtitle: "Live odds in ₹", tag: "LIVE" },
-          { img: cricket, title: "T20 World Cup", subtitle: "All matches" },
-          { img: cricket, title: "ODI Series", subtitle: "India vs World" },
-          { img: cricket, title: "Test Cricket", subtitle: "Session betting", tag: "HOT" },
+          { img: cricket, title: "IPL 2026", subtitle: "Live odds in ₹", tag: "LIVE", href: "/cricket" },
+          { img: cricket, title: "T20 World Cup", subtitle: "All matches", href: "/cricket" },
+          { img: cricket, title: "ODI Series", subtitle: "India vs World", href: "/cricket" },
+          { img: cricket, title: "Test Cricket", subtitle: "Session betting", tag: "HOT", href: "/cricket" },
         ]}
       />
 
@@ -71,11 +70,12 @@ export const GameSections = () => {
         id="casino"
         eyebrow="Live Dealers"
         title="Casino Games"
+        ctaHref="/casino"
         items={[
-          { img: casino, title: "Live Roulette", subtitle: "European & Auto", tag: "LIVE" },
-          { img: andar, title: "Andar Bahar", subtitle: "Indian classic" },
-          { img: teen, title: "Teen Patti", subtitle: "3 Patti live", tag: "HOT" },
-          { img: casino, title: "Dragon Tiger", subtitle: "Fast rounds" },
+          { img: casino, title: "Live Roulette", subtitle: "European & Auto", tag: "LIVE", href: "/casino" },
+          { img: andar, title: "Andar Bahar", subtitle: "Indian classic", href: "/casino" },
+          { img: teen, title: "Teen Patti", subtitle: "3 Patti live", tag: "HOT", href: "/casino" },
+          { img: casino, title: "Dragon Tiger", subtitle: "Fast rounds", href: "/casino" },
         ]}
       />
 
@@ -83,11 +83,12 @@ export const GameSections = () => {
         id="more-games"
         eyebrow="More Games"
         title="Slots, Aviator & More"
+        ctaHref="/casino"
         items={[
-          { img: aviator, title: "Aviator", subtitle: "Crash multiplier", tag: "NEW" },
-          { img: slots, title: "Mega Slots 777", subtitle: "Jackpot ₹1 Cr+" },
-          { img: andar, title: "Lucky 7", subtitle: "Quick win" },
-          { img: teen, title: "Poker", subtitle: "Tournaments" },
+          { img: aviator, title: "Aviator", subtitle: "Crash multiplier", tag: "NEW", href: "/casino" },
+          { img: slots, title: "Mega Slots 777", subtitle: "Jackpot ₹1 Cr+", href: "/casino" },
+          { img: andar, title: "Lucky 7", subtitle: "Quick win", href: "/casino" },
+          { img: teen, title: "Poker", subtitle: "Tournaments", href: "/casino" },
         ]}
       />
     </>

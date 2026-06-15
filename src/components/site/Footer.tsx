@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
-import { WHATSAPP_URL } from "@/lib/site";
 import { BLOG_POSTS } from "@/data/blogPosts";
 
 export const Footer = () => (
@@ -14,15 +13,15 @@ export const Footer = () => (
         <p className="text-sm text-muted-foreground">Skyexchange2 (Sky Exchange Login) — India's most trusted online cricket & casino platform. Play live cricket betting in ₹, win big with fast withdrawal & 24x7 support.</p>
       </div>
       {[
-        { t: "Sports", l: ["Cricket", "IPL 2026", "T20 World Cup", "ODI"] },
-        { t: "Casino", l: ["Live Roulette", "Andar Bahar", "Teen Patti", "Aviator"] },
+        { t: "Sports", items: [{ label: "Cricket", href: "/cricket" }, { label: "IPL 2026", href: "/cricket" }, { label: "T20 World Cup", href: "/cricket" }, { label: "ODI", href: "/cricket" }] },
+        { t: "Casino", items: [{ label: "Live Roulette", href: "/casino" }, { label: "Andar Bahar", href: "/casino" }, { label: "Teen Patti", href: "/casino" }, { label: "Aviator", href: "/casino" }] },
       ].map((s) => (
         <div key={s.t}>
           <h4 className="font-bold mb-3">{s.t}</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            {s.l.map((x) => (
-              <li key={x}>
-                <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="hover:text-primary">{x}</a>
+            {s.items.map((x) => (
+              <li key={x.label}>
+                <Link to={x.href} className="hover:text-primary">{x.label}</Link>
               </li>
             ))}
           </ul>

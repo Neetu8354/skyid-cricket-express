@@ -32,9 +32,9 @@ export const Hero = () => {
               🏏 INDIA'S #1 CRICKET ID PROVIDER
             </span>
             <h1 className="text-[2.5rem] leading-[1.05] md:text-6xl lg:text-7xl font-extrabold mb-4 md:mb-6">
-              <span className="text-foreground">Play Cricket.</span>
+              <span className="text-foreground">SkyExchange2 – India’s Trusted</span>
               <br />
-              <span className="text-gradient-gold">Win Big in ₹.</span>
+              <span className="text-gradient-gold">Cricket ID for IPL, T20 &amp; Live Cricket Betting</span>
             </h1>
 
             {/* Mobile: image between heading and paragraph */}
@@ -51,7 +51,7 @@ export const Hero = () => {
             </div>
 
             <p className="text-sm md:text-lg text-foreground/85 mb-6 md:mb-8 max-w-xl">
-              Get your trusted online cricket & casino ID instantly on WhatsApp. Bet on IPL, T20, ODI, Andar Bahar, Teen Patti and 1000+ live casino games — all in INR.
+              SkyExchange2 is one of India’s leading platforms for cricket enthusiasts looking to access live cricket betting, IPL betting, cricket exchange markets, and real-time cricket odds. Whether you’re following the Indian Premier League (IPL), ICC T20 World Cup, ODI series, Test matches, or international cricket tournaments, SkyExchange provides a seamless experience with instant <a href="/cricket" className="underline text-primary hover:text-primary/80">Cricket ID registration</a> and fast support.
             </p>
 
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4 mb-8 md:mb-10">
