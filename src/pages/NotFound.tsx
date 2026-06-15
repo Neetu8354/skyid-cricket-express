@@ -11,7 +11,7 @@ const NotFound = () => {
       title: "Page Not Found | Skyexchange2",
       description:
         "The page you're looking for doesn't exist on Skyexchange2. Return home to get your online cricket & casino ID on WhatsApp.",
-      canonical: `https://skyexchange2.live${location.pathname}`,
+      canonical: `https://www.skyexchange2.live${location.pathname}`,
     });
     // Hint to crawlers that this page should not be indexed
     let robots = document.head.querySelector('meta[name="robots"]') as HTMLMetaElement | null;

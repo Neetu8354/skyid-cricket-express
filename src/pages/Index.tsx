@@ -31,13 +31,13 @@ const Index = () => {
       Object.entries(attrs).forEach(([k, v]) => el!.setAttribute(k, v));
     };
     ensure('meta[name="description"]', { name: "description", content: "Get your SkyExchange2 Cricket ID instantly. Enjoy live IPL betting, cricket exchange markets, real-time odds, casino games, fast UPI withdrawals, and 24/7 support across India." });
-    ensure('link[rel="canonical"]', { rel: "canonical", href: "https://skyexchange2.live/" });
+    ensure('link[rel="canonical"]', { rel: "canonical", href: "https://www.skyexchange2.live/" });
     ensure('meta[property="og:title"]', { property: "og:title", content: "SkyExchange2 Cricket ID | Live IPL Betting, Cricket Exchange & Casino" });
     ensure('meta[property="og:description"]', { property: "og:description", content: "Get your SkyExchange2 Cricket ID instantly. Enjoy live IPL betting, cricket exchange markets, real-time odds, casino games, fast UPI withdrawals, and 24/7 support across India." });
     ensure('meta[property="og:type"]', { property: "og:type", content: "website" });
-    ensure('meta[property="og:url"]', { property: "og:url", content: "https://skyexchange2.live/" });
-    ensure('meta[property="og:image"]', { property: "og:image", content: "https://skyexchange2.live/og-image.jpg" });
-    ensure('meta[name="twitter:image"]', { name: "twitter:image", content: "https://skyexchange2.live/og-image.jpg" });
+    ensure('meta[property="og:url"]', { property: "og:url", content: "https://www.skyexchange2.live/" });
+    ensure('meta[property="og:image"]', { property: "og:image", content: "https://www.skyexchange2.live/og-image.jpg" });
+    ensure('meta[name="twitter:image"]', { name: "twitter:image", content: "https://www.skyexchange2.live/og-image.jpg" });
     ensure('meta[name="twitter:title"]', { name: "twitter:title", content: "SkyExchange2 Cricket ID | Live IPL Betting, Cricket Exchange & Casino" });
     ensure('meta[name="twitter:description"]', { name: "twitter:description", content: "Get your SkyExchange2 Cricket ID instantly. Enjoy live IPL betting, cricket exchange markets, real-time odds, casino games, fast UPI withdrawals, and 24/7 support across India." });
   }, []);

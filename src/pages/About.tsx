@@ -13,7 +13,7 @@ const About = () => {
       title: "About Skyexchange2 | India's Trusted Online Sports Gaming Platform 2026",
       description:
         "About Skyexchange2 (Sky Exchange Login) — India's leading online sports gaming platform since 2017. 10L+ players, 1000+ games, instant ₹ withdrawals, 24x7 WhatsApp support.",
-      canonical: "https://skyexchange2.live/about",
+      canonical: "https://www.skyexchange2.live/about",
       keywords:
         "about skyexchange2, sky exchange login, online sports gaming platform, sports betting platform online, skyexchange2 online platform",
       jsonLd: [
@@ -21,7 +21,7 @@ const About = () => {
           "@context": "https://schema.org",
           "@type": "AboutPage",
           name: "About Skyexchange2",
-          url: "https://skyexchange2.live/about",
+          url: "https://www.skyexchange2.live/about",
           description:
             "Learn about Skyexchange2 — India's trusted online cricket and casino gaming platform.",
         },
@@ -29,8 +29,8 @@ const About = () => {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://skyexchange2.live/" },
-            { "@type": "ListItem", position: 2, name: "About", item: "https://skyexchange2.live/about" },
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://www.skyexchange2.live/" },
+            { "@type": "ListItem", position: 2, name: "About", item: "https://www.skyexchange2.live/about" },
           ],
         },
       ],

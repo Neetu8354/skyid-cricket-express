@@ -15,7 +15,7 @@ const Cricket = () => {
       title: "Live Cricket Betting India 2026 | IPL, T20, ODI Markets | Skyexchange2",
       description:
         "Bet on live cricket online in India — IPL 2026, T20 World Cup, ODI & Test markets on Skyexchange2. Lowest commission, fastest odds, instant ₹ withdrawals.",
-      canonical: "https://skyexchange2.live/cricket",
+      canonical: "https://www.skyexchange2.live/cricket",
       keywords:
         "live cricket betting tips online, ipl 2026, how to bet on live cricket matches online, sports betting platform online, online sports gaming platform, skyexchange2 online platform",
       jsonLd: [
@@ -23,15 +23,15 @@ const Cricket = () => {
           "@context": "https://schema.org",
           "@type": "WebPage",
           name: "Live Cricket Betting on Skyexchange2",
-          url: "https://skyexchange2.live/cricket",
+          url: "https://www.skyexchange2.live/cricket",
           description: "Live cricket betting markets on Skyexchange2 — IPL, T20 World Cup, ODI, Test cricket.",
         },
         {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://skyexchange2.live/" },
-            { "@type": "ListItem", position: 2, name: "Cricket", item: "https://skyexchange2.live/cricket" },
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://www.skyexchange2.live/" },
+            { "@type": "ListItem", position: 2, name: "Cricket", item: "https://www.skyexchange2.live/cricket" },
           ],
         },
       ],

@@ -14,7 +14,7 @@ const Contact = () => {
       title: "Contact Skyexchange2 | 24x7 WhatsApp Support for Sky Exchange Login",
       description:
         "Contact Skyexchange2 24x7 on WhatsApp for Sky Exchange Login help, ID creation, deposit & withdrawal support. Real human support, replies in under 60 seconds.",
-      canonical: "https://skyexchange2.live/contact",
+      canonical: "https://www.skyexchange2.live/contact",
       keywords:
         "contact skyexchange2, skyexchange2 support, sky exchange login support, whatsapp cricket id, online betting website india",
       jsonLd: [
@@ -22,15 +22,15 @@ const Contact = () => {
           "@context": "https://schema.org",
           "@type": "ContactPage",
           name: "Contact Skyexchange2",
-          url: "https://skyexchange2.live/contact",
+          url: "https://www.skyexchange2.live/contact",
           description: "Get 24x7 support for Skyexchange2 login, deposits, withdrawals and account help.",
         },
         {
           "@context": "https://schema.org",
           "@type": "Organization",
           name: "Skyexchange2",
-          url: "https://skyexchange2.live/",
-          logo: "https://skyexchange2.live/favicon.png",
+          url: "https://www.skyexchange2.live/",
+          logo: "https://www.skyexchange2.live/favicon.png",
           contactPoint: [
             {
               "@type": "ContactPoint",
@@ -46,8 +46,8 @@ const Contact = () => {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://skyexchange2.live/" },
-            { "@type": "ListItem", position: 2, name: "Contact", item: "https://skyexchange2.live/contact" },
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://www.skyexchange2.live/" },
+            { "@type": "ListItem", position: 2, name: "Contact", item: "https://www.skyexchange2.live/contact" },
           ],
         },
       ],

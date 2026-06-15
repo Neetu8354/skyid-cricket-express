@@ -59,7 +59,7 @@ export const applySeo = ({
   title,
   description,
   canonical,
-  image = "https://skyexchange2.live/og-image.jpg",
+  image = "https://www.skyexchange2.live/og-image.jpg",
   imageWidth,
   imageHeight,
   imageAlt,
