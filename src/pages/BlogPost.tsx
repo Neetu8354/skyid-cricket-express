@@ -23,18 +23,21 @@ const BlogPost = () => {
       jsonLd: [
         {
           "@context": "https://schema.org",
-          "@type": "BlogPosting",
+          "@type": "Article",
           headline: post.title,
           description: post.description,
+          keywords: post.keywords,
           datePublished: post.date,
           dateModified: post.date,
-          author: { "@type": "Organization", name: "Skyexchange2" },
+          inLanguage: "en-IN",
+          articleSection: post.category,
+          author: { "@type": "Organization", name: "SkyExchange2" },
           publisher: {
             "@type": "Organization",
-            name: "Skyexchange2",
+            name: "SkyExchange2",
             logo: {
               "@type": "ImageObject",
-              url: "https://www.skyexchange2.live/favicon.png",
+              url: "https://www.skyexchange2.live/logo.png",
             },
           },
           mainEntityOfPage: { "@type": "WebPage", "@id": url },
@@ -123,6 +126,14 @@ const BlogPost = () => {
                       <li key={j}>{it}</li>
                     ))}
                   </ol>
+                );
+              case "html":
+                return (
+                  <p
+                    key={i}
+                    className="text-base text-foreground/85"
+                    dangerouslySetInnerHTML={{ __html: block.text }}
+                  />
                 );
               case "quote":
                 return (
