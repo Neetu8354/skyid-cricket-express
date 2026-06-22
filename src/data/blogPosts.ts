@@ -90,6 +90,20 @@ export const BLOG_POSTS: BlogPost[] = [
         type: "p",
         text: "Once you've completed Sky Exchange Login, head to the Cricket section for IPL 2026 live odds, or the Casino section for Andar Bahar, Teen Patti, Aviator and 1000+ live dealer games. All winnings are paid out in INR via UPI in 5–10 minutes.",
       },
+      { type: "h2", text: "Related Articles" },
+      {
+        type: "html",
+        text: "Now that you know how to login, explore these guides to master <a href=\"/cricket\" class=\"text-primary hover:underline\">cricket betting</a> and <a href=\"/casino\" class=\"text-primary hover:underline\">casino games</a>:",
+      },
+      {
+        type: "ul",
+        items: [
+          "<a href=\"/blog/how-to-join-online-sports-gaming-website\" class=\"text-primary hover:underline\">How to Join Online Sports Gaming Website in India (2026 Walkthrough)</a>",
+          "<a href=\"/blog/live-cricket-betting-tips-online\" class=\"text-primary hover:underline\">Live Cricket Betting Tips Online — How to Bet on Live Cricket Matches in 2026</a>",
+          "<a href=\"/blog/how-to-play-blackjack-online-india-rules-strategies-tips\" class=\"text-primary hover:underline\">How to Play Blackjack Online in India: Rules, Strategies, and Tips</a>",
+          "<a href=\"/blog/mobile-friendly-sports-betting-platforms-2026\" class=\"text-primary hover:underline\">Mobile Friendly Sports Betting Platforms 2026 — Why Skyexchange2 Wins</a>",
+        ],
+      },
     ],
   },
   {
