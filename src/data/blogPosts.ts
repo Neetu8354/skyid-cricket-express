@@ -289,6 +289,8 @@ export const BLOG_POSTS: BlogPost[] = [
         type: "p",
         text: "Yes. Blackjack is considered one of the easiest casino games to learn. Most players can understand the basic rules within a short period and improve through practice.",
       },
+    ],
   },
+];
 
 export const getPostBySlug = (slug: string) => BLOG_POSTS.find((p) => p.slug === slug);
